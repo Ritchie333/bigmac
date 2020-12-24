@@ -51,7 +51,7 @@ vers="/sw_vers"
 sw=$(pwd)$bin$vers
 
 echo "\r\nSoftware Version Check"
-version=$($sw '-productVersion')
+version=$("$sw" '-productVersion')
 echo $version
 
 if [ $version == "10.16" ] || [ $version == "11.0" ] || [ $version == "11.1" ] || [ $version == "11.0.1" ]
